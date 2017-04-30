@@ -1,17 +1,10 @@
-<div class="btn-group btn-group-justified" role="group" aria-label="...">
-  <div class="btn-group" role="group">
-    <a href="${pageContext.request.contextPath}/" class="btn btn-default">Home</a>
-  </div>
-  <div class="btn-group" role="group">
-    <a href="${pageContext.request.contextPath}/addNewStudent" class="btn btn-default">
-    	<span class="glyphicon glyphicon-plus"></span>
-    	Student
-    </a>
-  </div>
-  <div class="btn-group" role="group">
-    <a href="${pageContext.request.contextPath}/viewStudents" class="btn btn-default">
-		<span class="glyphicon glyphicon-list-alt"></span>
-		Students
-	</a>
-  </div>
-</div>
+<aside class="menu">
+  <p class="menu-label">
+    Menu
+  </p>
+  <ul class="menu-list">
+    <li><a href="${pageContext.request.contextPath}/"><span class="icon"><i class="fa fa-home is-info" aria-hidden="true"></i></span> Home</a></li>
+    <li><a href="${pageContext.request.contextPath}/addNewStudent"><span class="icon"><i class="fa fa-plus is-info" aria-hidden="true"></i></span> Add Student</a></li>
+    <li><a href="${pageContext.request.contextPath}/viewStudents"><span class="icon"><i class="fa fa-list is-info" aria-hidden="true"></i></span> Student List</a></li>
+  </ul>
+ </aside>

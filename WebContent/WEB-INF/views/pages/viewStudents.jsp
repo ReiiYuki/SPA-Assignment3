@@ -1,13 +1,13 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
-<div style="margin: 10px;">
-	<h4>Students List</h4>
-	<h3>${message }</h3>
-	<table class="table table-hover">
+<div>
+	<h1 class="title">Students List</h1>
+	<h3>${message}</h3>
+	<table class="table">
 		<tbody>
 			<tr>
-				<th>Id</th>
+				<th>ID</th>
 				<th>Name</th>
 				<th>GPAX</th>
 				<th>Ambition</th>
@@ -20,8 +20,17 @@
 					<td><c:out value="${student.name }"/></td>
 					<td><c:out value="${student.gpax }"/></td>
 					<td><c:out value="${student.ambition }"/></td>
-					<td><a href="${pageContext.request.contextPath}/editStudent/${student.id}"><span class="glyphicon glyphicon-edit"></span></a></td>
-					<td><form action="${pageContext.request.contextPath}/deleteStudent/${student.id}" method="POST"><button type="submit"><span class="glyphicon glyphicon-remove"></span></button></form></td>
+					<td><a href="${pageContext.request.contextPath}/editStudent/${student.id}"><span class="icon"><i class="fa fa-pencil " aria-hidden="true"></i></span></a></td>
+					<td>
+						<form action="${pageContext.request.contextPath}/deleteStudent/${student.id}" method="POST" id="deleteForm${student.id}">
+							<a href="#" onclick="document.getElementById('deleteForm${student.id}').submit()">
+								<span class="icon">
+									<i class="fa fa-trash " aria-hidden="true">
+									</i>
+								</span>
+							</a>
+						</form>
+					</td>
 				</tr>
 			</c:forEach>
 		</tbody>

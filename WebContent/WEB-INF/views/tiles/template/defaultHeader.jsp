@@ -1,7 +1,12 @@
-<div class="page-header ">
-	<h1>Software Architecture, Design Patterns in Spring 
-	<br>
-	<br>
-	<small>By Pakpon Jetapai 5710546381</small>
-	</h1>
-</div>
+<section class="hero is-info is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Software Architecture, Design Patterns in Spring 
+      </h1>
+      <h2 class="subtitle">
+        By Voraton Lertrattanapaisal 5710546593
+      </h2>
+    </div>
+  </div>
+</section>

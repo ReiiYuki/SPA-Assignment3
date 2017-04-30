@@ -1,2 +1,7 @@
-<h2 class="text-center">Pakpon's JDBCTemplate Project </h2>
-<h3 class="text-center">${message }</h3>
+<div>
+	<h1 class="title">
+		Voraton's JDBCTemplate Project	
+	</h1>
+	${message}
+</div>
+<h3 class="text-center"></h3>
